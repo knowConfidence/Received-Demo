@@ -1,24 +1,27 @@
+/*import google font Open Sans*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/*reset elements*/
 * {
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
+/*align content left*/
 .container_left{
 	display: flex;
 	flex-wrap: wrap;
 
 	justify-content: flex-start;
 }
-
+/*align content right*/
 .container_right{
 	display: flex;
 	flex-wrap: wrap;
 
 	justify-content: flex-end;
 }
-
+/*align content center*/
 .container_center{
 	display: flex;
 	flex-wrap: wrap;
@@ -26,6 +29,7 @@
 	justify-content: center;
 }
 
+/*text/font styling*/
 .title{
     font-size:100%;
     letter-spacing:1px;
@@ -55,20 +59,20 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/*reset element*/
 .clamp{
 	padding: 0;
     margin: 0;
     border: 0;
 }
 
+/*padding at various sizes*/
 .frame_sm{
     padding: 10px 10px;
 }
-
 .frame_md{
     padding: 25px 25px;
 }
-
 .frame_lg{
 	padding: 40px 40px;
 }
@@ -94,6 +98,15 @@
     /*.wrap{max-width:770px;}*/
 }
 
+/*align element left or right*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+
+/*default html and body styling*/
 html, body{
     font-size: 100%;
     line-height: 1.6875;
@@ -101,13 +114,7 @@ html, body{
     background-color: lightgrey;
 }
 
-.f_left{
-	float: left;
-}
-.f_right{
-	float: right;
-}
-
+/*page specific styling*/
 .cant_read{
     background-color: grey;
     color: white;

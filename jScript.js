@@ -1,17 +1,24 @@
 $(document).ready(function(){
 
+	var width = $(window).width();
+
 	setCardCenter();
 
 	$(window).resize(function(){
 
-		setCardCenter();
+		var newWidth = $(window).width();
+
+		if(newWidth != width){
+
+			width = newWidth;
+			setCardCenter();
+		}
 
 	});
 
-
 });
 
-
+//center image and adjust width/height to fit responsive container
 function setCardCenter(){
 
 	var card = $(".card_wrapper");
